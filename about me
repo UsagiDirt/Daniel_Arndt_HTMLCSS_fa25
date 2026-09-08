@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+</head>
+<body>
+    <header>
+        <h1>Daniel Arndt/ Dirt</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>A Little About Me</h2>
+            <p>
+                I am a college student studying computer science, software, and web development.
+                I enjoy learning how technology can be used to solve problems and create useful projects.
+            </p>
+            <p>
+                Outside of school, I am interested in creative writing, digital design, photography,
+                video games, and playing golf.
+            </p>
+        </section>
+
+        <section>
+            <h2>My Goals for this Course</h2>
+            <p>
+                In this course, I hope to improve my HTML, CSS, and programming skills while learning
+                how to create well-structured and accessible websites.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <p>&copy; 2026 Daniel Arndt. All rights reserved.</p>
+        </nav>
+    </footer>
+</body>
+</html>
