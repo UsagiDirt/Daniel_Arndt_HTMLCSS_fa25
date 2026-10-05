@@ -1,0 +1,80 @@
+:root {
+    --bg-color: hsl(45, 85%, 88%);
+    --text-color: #6b4226;
+    --heading-color: rgb(92, 35, 15);
+    --section-heading-color: #8a451f;
+    --primary-color: #7a3e1d;
+    --accent-color: #f7c873;
+    --quote-bg-color: rgba(255, 214, 132, 0.75);
+    --quote-border-color: #a84420;
+    --quote-text-color: #5a321f;
+    --footer-border-color: #7a3e1d;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.6;
+    margin: 30px;
+}
+
+header,
+main,
+footer {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    color: var(--heading-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 900;
+    text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+h2 {
+    border-bottom: 2px solid var(--primary-color);
+    color: var(--section-heading-color);
+    padding-bottom: 4px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+blockquote {
+    background-color: var(--quote-bg-color);
+    border-left: 5px solid var(--quote-border-color);
+    color: var(--quote-text-color);
+    margin: 20px 0;
+    padding: 1em;
+}
+
+footer {
+    border-top: 2px solid var(--footer-border-color);
+    margin-top: 40px;
+    padding-top: 15px;
+}
+
+/* Dark mode: automatically used when the computer/browser prefers dark mode. */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #221814;
+        --text-color: #f6e7d0;
+        --heading-color: #ffd18a;
+        --section-heading-color: #ffb870;
+        --primary-color: #d98c4d;
+        --accent-color: #8d3f24;
+        --quote-bg-color: #3a261d;
+        --quote-border-color: #f0a15d;
+        --quote-text-color: #ffe1bb;
+        --footer-border-color: #d98c4d;
+    }
+}
