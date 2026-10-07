@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification Settings | Assignment 7</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <div id="settings-panel">
+            <h2>Notification Settings</h2>
+
+            <p class="panel-description">
+                Review your notification preferences below.
+            </p>
+
+            <div class="setting">
+                <label id="email-label">Email notifications</label>
+                <a href="#settings-panel"
+                   class="active"
+                   aria-labelledby="email-label email-status">
+                    <span id="email-status">On</span>
+                </a>
+            </div>
+
+            <div class="setting">
+                <label id="text-label">Text message alerts</label>
+                <a href="#settings-panel"
+                   aria-labelledby="text-label text-status">
+                    <span id="text-status">Off</span>
+                </a>
+            </div>
+
+            <div class="setting">
+                <label id="push-label">Push notifications</label>
+                <a href="#settings-panel"
+                   aria-labelledby="push-label push-status">
+                    <span id="push-status">Off</span>
+                </a>
+            </div>
+
+            <div class="privacy-row">
+                <a href="https://www.mozilla.org/en-US/privacy/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Privacy Policy
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
