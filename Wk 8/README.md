@@ -1,4 +1,4 @@
-# Week 8: Featured Products
+# Wk8: Featured Products
 
 A small HTML and CSS project that presents three featured products as cards:
 
