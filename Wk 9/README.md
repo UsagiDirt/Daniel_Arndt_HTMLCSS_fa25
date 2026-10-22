@@ -15,9 +15,3 @@ A three-page personal brand website with a cherry blossom color theme. The site 
 
 "Pink Cherry Blossoms" by Kristina Paukshtite on Pexels:
 https://www.pexels.com/photo/pink-cherry-blossoms-701816/
-
-Used under the Pexels License (https://www.pexels.com/license/). The credit also appears under the photo on the homepage.
-
-## View the site
-
-Open `midterm_project/index.html` in a web browser. Use the navigation menu to move between pages.
