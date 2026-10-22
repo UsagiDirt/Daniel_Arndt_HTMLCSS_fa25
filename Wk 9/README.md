@@ -10,17 +10,6 @@ A three-page personal brand website with a cherry blossom color theme. The site 
 - `midterm_project/styles.css` styles all three pages.
 - `midterm_project/images/` holds the homepage photo.
 
-## Requirements covered
-
-- `styles.css` starts with the `box-sizing: border-box` reset.
-- CSS variables in `:root` manage every color and both font families.
-- All three pages share the same `<header>`, `<nav>`, and `<footer>`.
-- Semantic HTML5: `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<figure>`, `<figcaption>`, and `<footer>`.
-- ID, class, and tag selectors are all used.
-- Padding and margin space out the layout.
-- Links, buttons, cards, list items, and the photo all have a `:hover` state.
-- The homepage photo has descriptive alt text.
-- A media query at 768px stacks the navigation, cards, and photo for phones.
 
 ## Photo credit
 
