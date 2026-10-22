@@ -1,0 +1,396 @@
+/* =========================================
+   Daniel Arndt - Personal Brand Website
+   Midterm Project - styles.css
+   Theme: cherry blossom pinks + leaf green
+   ========================================= */
+
+/* Box-sizing reset (must come first) */
+* {
+    box-sizing: border-box;
+}
+
+/* CSS variables for all main colors and fonts */
+:root {
+    --blossom-light: #fff5f7;
+    --blossom-pale: #fde3ea;
+    --blossom-soft: #f8c8d4;
+    --blossom-pink: #e88aa5;
+    --blossom-rose: #d96b8a;
+    --blossom-deep: #c45c7a;
+    --leaf-green: #a8c9a0;
+    --leaf-deep: #7fa877;
+    --bark: #5a3e45;
+    --bark-light: #8a6b72;
+    --white: #ffffff;
+
+    --heading-font: "Courier New", Courier, monospace;
+    --body-font: Verdana, Arial, sans-serif;
+}
+
+/* ---------- Tag selectors ---------- */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--blossom-light);
+    color: var(--bark);
+    font-family: var(--body-font);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+    color: var(--blossom-rose);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: var(--blossom-deep);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+a {
+    color: var(--blossom-deep);
+}
+
+a:hover {
+    color: var(--blossom-rose);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ---------- Header and nav (all pages) ---------- */
+
+header {
+    background-color: var(--white);
+    border-bottom: 3px solid var(--blossom-pink);
+    box-shadow: 0 4px 12px var(--leaf-green);
+    padding: 20px 0;
+}
+
+/* Lines the header up with the main content */
+#headerBox {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#siteTitle {
+    font-size: 1.8rem;
+    margin: 0 0 5px 0;
+}
+
+#tagline {
+    font-family: var(--heading-font);
+    color: var(--bark-light);
+    margin: 0 0 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+
+nav a {
+    display: block;
+    padding: 8px 18px;
+    border: 2px solid var(--blossom-soft);
+    color: var(--bark);
+    font-family: var(--heading-font);
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background-color: var(--blossom-pink);
+    border-color: var(--blossom-pink);
+    color: var(--white);
+    box-shadow: 2px 2px 8px var(--leaf-deep);
+}
+
+/* Highlights the page you are on */
+nav a.current {
+    background-color: var(--blossom-pale);
+    border-color: var(--blossom-rose);
+}
+
+/* ---------- Main layout wrappers ---------- */
+
+#mainBox {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+#content {
+    background-color: var(--white);
+    border: 2px solid var(--blossom-soft);
+    padding: 30px;
+}
+
+main section {
+    margin-bottom: 30px;
+}
+
+/* ---------- Reusable classes ---------- */
+
+.panel {
+    background-color: var(--blossom-light);
+    border: 2px solid var(--blossom-pink);
+    box-shadow: 2px 2px 8px var(--leaf-green);
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 5px 10px 5px 0;
+    background-color: var(--blossom-deep);
+    color: var(--white);
+    border: 2px solid var(--blossom-deep);
+    font-family: var(--heading-font);
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: var(--white);
+    color: var(--blossom-deep);
+    border-color: var(--blossom-deep);
+    box-shadow: 3px 3px 12px var(--leaf-deep);
+}
+
+.photoCredit {
+    margin-top: 8px;
+    font-size: 0.8rem;
+    color: var(--bark-light);
+    text-align: center;
+}
+
+.label {
+    color: var(--bark-light);
+    font-family: var(--heading-font);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+/* ---------- index.html ---------- */
+
+/* The figure holds the photo and its credit, floated to the right */
+#heroFigure {
+    float: right;
+    width: 45%;
+    margin: 0 0 20px 25px;
+}
+
+#heroImage {
+    display: block;
+    width: 100%;
+    border: 3px solid var(--blossom-soft);
+    box-shadow: 2px 2px 8px var(--leaf-green);
+}
+
+#heroImage:hover {
+    border-color: var(--blossom-pink);
+    box-shadow: 3px 3px 12px var(--leaf-deep);
+}
+
+#intro {
+    margin-bottom: 30px;
+}
+
+/* Starts below the floated image */
+#skills {
+    clear: both;
+}
+
+.interestList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.interestList li {
+    display: inline-block;
+    width: 31%;
+    vertical-align: top;
+    margin: 0 1% 15px 0;
+    padding: 15px;
+    background-color: var(--blossom-light);
+    border-left: 4px solid var(--blossom-pink);
+}
+
+/* Skills use two boxes per row */
+.skillList li {
+    width: 48%;
+}
+
+.interestList li:hover {
+    border-left-color: var(--blossom-deep);
+    background-color: var(--blossom-pale);
+    box-shadow: 2px 2px 8px var(--leaf-green);
+}
+
+/* ---------- portfolio.html ---------- */
+
+.project {
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+    margin: 0 1% 25px 0;
+    padding: 20px;
+    background-color: var(--blossom-light);
+    border: 2px solid var(--blossom-soft);
+    border-top: 4px solid var(--blossom-pink);
+    box-shadow: 2px 2px 8px var(--leaf-green);
+}
+
+.project:hover {
+    border-color: var(--blossom-pink);
+    border-top-color: var(--blossom-deep);
+    box-shadow: 3px 3px 12px var(--leaf-deep);
+}
+
+.project p {
+    font-size: 0.95rem;
+}
+
+/* ---------- contact.html ---------- */
+
+#emailBox {
+    text-align: center;
+}
+
+#emailAddress {
+    font-family: var(--heading-font);
+    font-size: 1.1rem;
+    color: var(--bark-light);
+}
+
+.linkList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.linkList li {
+    margin-bottom: 12px;
+    padding: 12px 15px;
+    background-color: var(--blossom-light);
+    border: 2px solid var(--blossom-soft);
+}
+
+.linkList li:hover {
+    border-color: var(--blossom-pink);
+    box-shadow: 2px 2px 8px var(--leaf-green);
+}
+
+/* ---------- Footer (all pages) ---------- */
+
+footer {
+    clear: both;
+    background-color: var(--bark);
+    border-top: 3px solid var(--blossom-pink);
+    padding: 20px;
+    text-align: center;
+    color: var(--blossom-soft);
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: var(--blossom-soft);
+}
+
+footer a:hover {
+    color: var(--white);
+}
+
+/* =========================================
+   Media query: phones and small screens
+   ========================================= */
+
+@media screen and (max-width: 768px) {
+
+    header {
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    #headerBox {
+        padding: 0 15px;
+    }
+
+    #siteTitle {
+        font-size: 1.4rem;
+    }
+
+    nav li {
+        display: block;
+        margin: 0 0 8px 0;
+    }
+
+    #mainBox {
+        padding: 15px 10px;
+    }
+
+    #content {
+        padding: 20px 15px;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    /* Image sits above the text instead of beside it */
+    #heroFigure {
+        float: none;
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    /* Cards and list items stack one per row */
+    .interestList li,
+    .project {
+        display: block;
+        width: 100%;
+        margin: 0 0 15px 0;
+    }
+
+    .button {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+}
