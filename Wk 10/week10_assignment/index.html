@@ -32,8 +32,10 @@
                     <picture id="heroPicture">
                         <!-- Wide crop for desktop and tablet screens -->
                         <source media="(min-width: 768px)" srcset="images/pink-cherry-blossoms.jpg">
+                        <!-- Closer portrait crop for mobile screens -->
+                        <source media="(max-width: 767px)" srcset="images/pink-cherry-blossoms-mobile.jpg">
                         <!-- Fallback image for browsers that do not support
-                             <picture>; also used for phone-width screens. -->
+                             <picture>. -->
                         <img id="heroImage" src="images/pink-cherry-blossoms-mobile.jpg" alt="Close-up of pink cherry blossoms in full bloom on a dark branch">
                     </picture>
                     <figcaption class="photoCredit">Photo by <a href="https://www.pexels.com/photo/pink-cherry-blossoms-701816/">Kristina Paukshtite</a> on <a href="https://www.pexels.com/">Pexels</a></figcaption>

@@ -296,14 +296,15 @@ main section {
 
 /* ---------- Week 10: interactive project images ---------- */
 
-/* Project photos are shown in grayscale until the visitor hovers over
-   them. Hovering removes the filter and slightly enlarges the photo. */
+/* Project photos smoothly change from grayscale to color and slightly
+   enlarge when the visitor hovers over them. */
 .project img {
     display: block;
     width: 100%;
     border: 3px solid var(--blossom-soft);
     margin: 0 0 15px 0;
     filter: grayscale(100%);
+    transition: filter 0.4s ease, transform 0.4s ease;
 }
 
 .project img:hover {
