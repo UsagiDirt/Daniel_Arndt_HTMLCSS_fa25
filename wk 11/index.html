@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quarterly Sales Report data table for Week 11.">
+    <title>Week 11 | Quarterly Sales Report</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main id="tablePage">
+        <h1>Quarterly Sales Report</h1>
+        <p class="intro">Sales totals by region for the first three quarters of the year, in U.S. dollars.</p>
+
+        <!-- Scrollable container so wide tables do not break the page layout -->
+        <div class="table-container">
+            <table>
+                <caption>Quarterly Sales by Region (Q1&ndash;Q3)</caption>
+
+                <thead>
+                    <tr>
+                        <td></td>
+                        <th scope="col">Q1</th>
+                        <th scope="col">Q2</th>
+                        <th scope="col">Q3</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">North Region</th>
+                        <td>$12,500</td>
+                        <td>$13,800</td>
+                        <td>$14,950</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">South Region</th>
+                        <td>$9,875</td>
+                        <td>$10,200</td>
+                        <td>$11,800</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">East Region</th>
+                        <td>$14,300</td>
+                        <td>$15,100</td>
+                        <td>$16,250</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">West Region</th>
+                        <td colspan="2">New region &mdash; opened in Q3</td>
+                        <td>$8,400</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <th scope="row">Total</th>
+                        <td>$36,675</td>
+                        <td>$39,100</td>
+                        <td>$51,400</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,153 @@
+/* =========================================
+   Daniel Arndt - Week 11 Data Table
+   styles.css
+   Theme: navy blue + grey
+   ========================================= */
+
+/* Box-sizing reset (must come first) */
+* {
+    box-sizing: border-box;
+}
+
+/* CSS variables for main colors and fonts */
+:root {
+    --page-bg: #f2f4f7;
+    --panel-bg: #ffffff;
+    --panel-border: #c9d1dd;
+    --header-bg: #dde3ec;
+    --row-hover: #e9edf3;
+    --navy: #1f3a5f;
+    --navy-deep: #16293f;
+    --navy-muted: #4a5b73;
+    --tfoot-bg: #2c4a6e;
+    --tfoot-border: #33557d;
+    --white: #ffffff;
+
+    --heading-font: "Courier New", Courier, monospace;
+    --body-font: Verdana, Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--page-bg);
+    color: var(--navy-deep);
+    font-family: var(--body-font);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    color: var(--navy);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* ---------- Page layout ---------- */
+
+#tablePage {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.intro {
+    color: var(--navy-muted);
+    margin-bottom: 25px;
+}
+
+/* ---------- Scrollable table container ---------- */
+
+.table-container {
+    overflow-x: auto;
+    background-color: var(--panel-bg);
+    border: 2px solid var(--panel-border);
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(31, 42, 61, 0.25);
+}
+
+/* ---------- Table styling ---------- */
+
+table {
+    width: 100%;
+    min-width: 560px;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+caption {
+    caption-side: top;
+    text-align: left;
+    font-family: var(--heading-font);
+    font-weight: bold;
+    color: var(--navy);
+    padding: 12px 15px 8px;
+}
+
+th,
+td {
+    border: 1px solid var(--panel-border);
+    padding: 10px 15px;
+    text-align: right;
+}
+
+thead th {
+    background-color: var(--header-bg);
+    color: var(--navy);
+    font-family: var(--heading-font);
+    letter-spacing: 1px;
+}
+
+tbody th {
+    background-color: var(--row-hover);
+    text-align: left;
+    font-weight: bold;
+}
+
+tbody tr:hover {
+    background-color: var(--row-hover);
+}
+
+tfoot th,
+tfoot td {
+    background-color: var(--tfoot-bg);
+    color: var(--white);
+    font-weight: bold;
+    border-color: var(--tfoot-border);
+}
+
+/* ---------- Media queries ---------- */
+
+/* Tablet and smaller: tighter spacing */
+@media screen and (max-width: 768px) {
+    #tablePage {
+        padding: 20px 12px;
+    }
+
+    th,
+    td {
+        padding: 8px 10px;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+}
+
+/* Phones: smaller text so more fits before scrolling */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    table {
+        font-size: 0.8rem;
+        min-width: 480px;
+    }
+
+    th,
+    td {
+        padding: 6px 8px;
+    }
+}
