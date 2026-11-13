@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quarterly Sales Report with a styled data table and navigation menu for Week 12.">
+    <title>Week 12 | Quarterly Sales Report</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Main site navigation -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="https://github.com/UsagiDirt">GitHub</a></li>
+            <li><a href="https://github.com/UsagiDirt/comc1730-property-management-UsagiDirt">Projects</a></li>
+            <li><a href="mailto:darndt209@yahoo.com">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main id="tablePage">
+        <h1>Quarterly Sales Report</h1>
+        <p class="intro">Sales totals by time zone for the first three quarters of the year, in U.S. dollars.</p>
+
+        <!-- Scrollable container so wide tables do not break the page layout -->
+        <div class="table-container">
+            <table>
+                <caption>Quarterly Sales by Time Zone (Q1&ndash;Q3)</caption>
+
+                <thead>
+                    <tr>
+                        <td></td>
+                        <th scope="col">Q1</th>
+                        <th scope="col">Q2</th>
+                        <th scope="col">Q3</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">Eastern</th>
+                        <td>$12,500</td>
+                        <td>$13,800</td>
+                        <td>$14,950</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Central</th>
+                        <td>$9,875</td>
+                        <td>$10,200</td>
+                        <td>$11,800</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Mountain</th>
+                        <td>$14,300</td>
+                        <td>$15,100</td>
+                        <td>$16,250</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Pacific</th>
+                        <td colspan="2">New area &mdash; opened in Q3</td>
+                        <td>$8,400</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <th scope="row">Total</th>
+                        <td>$36,675</td>
+                        <td>$39,100</td>
+                        <td>$51,400</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
